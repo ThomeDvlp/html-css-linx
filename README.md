@@ -1,6 +1,6 @@
 # Teste Linx Impulse 2021
 
-Para inicializar esse arquivo:<br>
+Para inicializar esse arquivo localmente:<br>
 
 1-  faça o clone desse repositorio em sua máquina
 
@@ -16,4 +16,6 @@ Para inicializar esse arquivo:<br>
 
 Desenvolvido para ter comportamento responsivo e se adaptar a qualquer tio de tela.
 
-Desenvolvido com HTML, CSS e pré processador SASS.
+Desenvolvido com HTMLgit a, CSS e pré processador SASS.
+
+ou acesse: https://desafio-html-css-linx.netlify.app/

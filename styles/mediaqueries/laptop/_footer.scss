@@ -1,0 +1,29 @@
+@mixin footer-laptop {
+  footer{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    .main-footer{
+      display: flex;
+      flex-direction:row;
+    justify-content: center;
+    padding: 0 3rem 1rem 3rem;
+      .section{
+        max-width: 70%;
+        display: flex;
+        font-size: 14px;
+      }
+    }
+    .botton-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $background;
+      color: #ffffff;
+      font-size: 12px ;
+      padding-bottom: 1%;
+      text-align: center;
+    }
+    
+  }
+}

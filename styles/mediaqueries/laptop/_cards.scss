@@ -1,0 +1,113 @@
+
+
+@mixin alert {
+  display: flex;
+  align-items: center;
+  justify-content : center;
+  position: absolute;
+  color: #FFFFFF;
+  border-radius: 0px 5px 5px 0px;
+  height: 29px;
+  width: 102px;
+  .text-alert{
+    margin-top: 0;
+  }
+
+}
+
+@mixin cards-laptop {
+  .card-grid{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-row1,  .card-row2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    margin: 0;
+    transition:height 0s;
+    padding: 1rem;
+    height: 360px;
+    width: 253px;
+    left: 184px;
+    top: 593px;
+    border-radius: 14px;
+    border: solid black 1px;
+    img{
+      width: 100%;
+    }
+    h4{
+      font-size: 14px;
+    }
+    h3{
+      font-size: 14px;
+      font-weight: 700;
+      margin: 8px 0 0 0
+    }
+    p{
+      font-size: 12px;
+      margin: 12px 0 0 0;
+    }
+    .deadline{
+      display: flex;
+      height: 18px;
+      
+      h2{
+        color:  #F04837;
+        ;
+        font-size: 18px;
+        font-weight: 700;
+        
+      }
+    }
+    .mobile-conclude{
+      display: none;
+    }
+    .alert-short{
+      @include alert();
+      background: $background;
+      left: 42px;
+    }
+
+    .alert-delayed{
+      @include alert();
+      background: $alert;
+      left: 360px;
+    }
+
+    .btn-change, .btn-conclude{
+      display: none;
+    }
+    
+  }
+  .card:hover{
+    height: 466px;
+    cursor: pointer;
+    .btn-change, .btn-conclude{
+      color:#FFFFFF;
+      height: 40px;
+      border-radius: 8px;
+      border-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      gap:3px;
+    }
+    .btn-conclude{
+      background:$background;
+    }
+    .btn-change{
+      background: $alert;
+    }
+  }
+  .card-row2{
+    margin-top: 0px;
+  }
+}

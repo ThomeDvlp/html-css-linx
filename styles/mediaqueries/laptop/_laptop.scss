@@ -1,0 +1,38 @@
+@import "./header";
+@import "./filters";
+@import "./cards";
+@import "./subscribe";
+@import "./footer";  
+
+@media only screen and (min-device-width: 822px) and (max-device-width:1199px){
+
+  
+
+@include header-laptop();
+
+main{
+  position: relative;
+  top: 220px
+}
+
+@include filters-laptop();
+
+@include cards-laptop();
+@include footer-laptop();
+
+.button-container{
+  margin-top: 50px;
+  text-align: center;
+  button{
+    border-radius: 8px;
+    background: $prymarybutton;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 155px;
+    height: 34px;
+    }
+}
+
+@include subscribe();
+
+}

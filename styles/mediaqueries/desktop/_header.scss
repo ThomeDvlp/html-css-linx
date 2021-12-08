@@ -1,0 +1,25 @@
+@mixin header-desktop {
+  header{
+    position: absolute;
+    width:100vw;
+    display: flex;
+    background: $background;
+    height: 381px;
+    color: #FFFF; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border-style: solid;
+    // border-bottom-color: #f00 #0f0 #00f #fc0;
+    // border-width: 10px 50px 60px;
+    
+  }
+  .diagonal{
+    width: 100vw;
+    top: 340px;
+    position: relative;
+    height: 100px;
+    background: #FFFFFF;
+    transform: skewY(2deg);
+  }
+}

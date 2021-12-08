@@ -1,0 +1,77 @@
+@mixin subscribe {
+  .subscribe{
+    margin-top: 122px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    .subscribe-container{
+      width:876px;
+      background: #E5E5E5;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-bottom: 1rem;
+      border-radius: 8px;
+      p{
+        padding: 5px 0 0 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #6E4B87;
+  
+      }
+      .input-container{
+        padding-left: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+  
+        .InputAddOn {
+          display: flex;
+        }
+  
+        .InputAddOn-field {
+          flex: 1;
+  
+        }
+  
+        .input-label{
+          display: flex;
+          flex-direction: column;
+          input{
+            height: 34px;
+            border-radius: 8px;
+            border-width: 0px;
+            font-family: sans-serif;
+          }
+  
+          label{
+            font-size: 14px;
+          }
+          #text-email{
+            width: 348px;
+          }
+          #text-name{
+            width: 335px;
+          }
+        }
+        
+        .container-buttonHolder{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          button{
+          border-radius: 8px;
+          background: $prymarybutton;
+          color: #FFFFFF;
+          font-size: 14px;
+          height: 34px;
+          }
+        }
+        
+      }
+    
+    
+    }
+  }
+}

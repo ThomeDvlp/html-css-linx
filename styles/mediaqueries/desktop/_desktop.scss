@@ -1,0 +1,40 @@
+@import "./header";
+@import "./filters";
+@import "./cards";
+@import "./subscribe";
+@import "./footer";  
+
+@media only screen and (min-width: 1200px) {
+
+  
+
+@include header-desktop();
+
+main{
+  position: relative;
+  top: 220px
+}
+
+
+
+@include filters-desktop();
+
+@include cards-desktop();
+@include footer-desktop();
+
+.button-container{
+  margin-top: 50px;
+  text-align: center;
+  button{
+    border-radius: 8px;
+    background: $prymarybutton;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 155px;
+    height: 34px;
+    }
+}
+
+@include subscribe();
+
+}

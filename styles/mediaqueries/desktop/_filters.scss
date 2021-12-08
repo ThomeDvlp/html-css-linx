@@ -1,0 +1,47 @@
+@mixin filters-desktop {
+  .container-selector{
+    position: relative;
+    // top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters {
+    margin: 3% 0 3% 0;
+    height: 85px;
+    width: 1081px;
+    display: flex;
+    justify-content: space-around;
+    background: #FEAF3D;
+    border-radius: 8px;
+    align-items: center;
+    button{
+      
+      color:#FFFFFF;
+      background: $prymarybutton;
+      height: 34px;
+      width: 69px;
+      border-radius: 8px;
+      float:right;
+    }
+    input{
+      display: inline-block;
+      height: 30px;
+      width: 245px;
+      border-radius: 8px 0 0 8px;
+      border: none;
+     
+    }
+  
+    select{
+      width:193px;
+      border-radius: 8px;
+      height: 33px;
+    } 
+    label{
+      color:#FFFFFF;
+    }
+  
+  }
+}

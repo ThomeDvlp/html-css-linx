@@ -1,0 +1,41 @@
+@import "./header";
+@import "./filters";
+@import "./footer";
+@import "./cards";
+
+@media only screen and (max-width: 821px) {
+
+  @include header-mobile();
+
+  main{
+    position: relative;
+    top: 120px
+  }
+  
+  .p-mobile{
+    margin-top: 20px;
+    top: 100px;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @include filters-mobile();
+
+  @include cards-mobile();
+
+  .button-container{
+    margin-top: 50px;
+    text-align: center;
+    button{
+      border-radius: 8px;
+      background: $prymarybutton;
+      color: #FFFFFF;
+      font-size: 14px;
+      width: 155px;
+      height: 34px;
+      }
+  }
+
+  @include footer-mobile();
+}

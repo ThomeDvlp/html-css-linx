@@ -1,0 +1,97 @@
+@mixin alert {
+  display: flex;
+  align-items: center;
+  justify-content : center;
+  position: absolute;
+  color: #FFFFFF;
+  border-radius: 0px 5px 5px 0px;
+  height: 29px;
+  width: 102px;
+  
+}
+
+@mixin cards-mobile {
+  .card-row1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .card{
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 10px;
+      width:340px;
+      height: 210px;
+      display: flex;
+      gap:10px;
+      img{
+        width: 50%;
+      }
+
+      .mobile-column{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3{
+          padding-top: 30px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+        p{
+          margin: 0;
+          font-size: 11px;
+          align-self: end;
+        }
+        .deadline{
+          display: flex;
+          flex-direction: row;
+          
+
+          h4{
+            font-size: 12px;
+            margin: 0;
+             
+          }
+          h2{
+            font-size: 18px;
+            color: $alert;
+            margin: 0;
+          }
+          
+        }
+        button{
+          height: 100px;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 700;
+          background: #FFFFFF;
+          border: 1px solid black; 
+          margin: 0;
+        }
+
+        h6{
+          margin-top: 5px;
+          font-size: 9px;
+        }
+      }
+
+    }
+
+    .alert-short{
+      @include alert();
+      background: $background;
+      left: 5px;
+    }
+  }
+
+  .card-row2{
+    display: none;
+  }
+
+  .subscribe{
+    display: none;
+  }
+}

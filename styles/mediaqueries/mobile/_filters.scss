@@ -1,0 +1,52 @@
+@mixin filters-mobile {
+  .container-selector{
+    position: relative;
+    // top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters {
+    padding: 1% 0  1% 0;
+    height: 146px;
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #FEAF3D;
+    border-radius: 8px;
+    align-items: center;
+    .inputAddOn{
+      width: 300px;
+    }
+    button{
+      
+      color:#FFFFFF;
+      background: $prymarybutton;
+      height: 34px;
+      width: 69px;
+      border-radius: 8px;
+      float:right;
+    }
+    input{
+      display: inline-block;
+      height: 29px;
+      width: 245px;
+      border-radius: 8px 0 0 8px;
+      border: none;
+     
+    }
+  
+    select{
+      width:193px;
+      border-radius: 8px;
+      height: 33px;
+      border: none;
+    } 
+    label{
+      color:#FFFFFF;
+    }
+  
+  }
+}

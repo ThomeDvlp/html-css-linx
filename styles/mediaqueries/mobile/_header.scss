@@ -1,0 +1,28 @@
+@mixin header-mobile {
+  header{
+    font-size: 14px;
+    font-weight: 800;
+    position: absolute;
+    width:100vw;
+    display: flex;
+    background: $background;
+    height: 130px;
+    color: #FFFF; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+      display: none;
+    }
+    
+  }
+  .diagonal{
+    text-align: center;
+    width: 100vw;
+    top: 115px;
+    position: relative;
+    height: 30px;
+    background: #FFFFFF;
+    transform: skewY(2deg);
+  }
+}
